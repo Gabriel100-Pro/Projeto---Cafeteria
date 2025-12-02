@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>CADASTRE-<span>SE</span></h1>
+        <div class="input">
+            <input autofocus placeholder="Usuário" type="text">
+            <input autocomplete="new-password" placeholder="Senha" type="adress">
+            <input autocomplete="email" type="email" placeholder="Email">
+            </div>
+        <div class="checkbox">
+            <input type="checkbox"> <a href="">Lembrar senha</a> <a href="">Esqueci a senha</a>
+        </div>
+            <button id="cadastrarBtn" class="btn">Cadastrar</button>
+    </main>
+
+    <!-- Spinner -->
+    <div id="spinnerOverlay">
+        <div class="spinner-border"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modalOverlay">
+        <div id="modal">
+            <h2>✅ Enviado com sucesso!</h2>
+            <button id="fecharBtn">OK</button>
+        </div>
+    </div>
+    <script src="functions.js"></script>
+</body>
+
+</html>

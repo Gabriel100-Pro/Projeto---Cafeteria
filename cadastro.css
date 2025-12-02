@@ -1,0 +1,214 @@
+:root{
+    --maiin-color:#d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: url(../fundo-cafeteria.jpg);
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+main{
+max-width: 300px;
+max-height: 300px;
+width: 300px;
+height: 300px;
+border-radius: 5px;
+border: 1px solid rgba(203, 202, 202, 0.801);
+text-align: center;
+margin-top: 15vw;
+padding: 50px 0px;
+background: rgba(255, 255, 255, 0.3); /* Fundo branco com transparência */
+        backdrop-filter: blur(5px);          /* Efeito de desfoque */
+        -webkit-backdrop-filter: blur(5px); /* Suporte para navegadores baseados no WebKit */
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+h1{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    color: var(--maiin-color);
+}
+
+section{
+    margin-top: -3rem;
+}
+
+input{
+    padding: 10px 35px;
+    margin: 10px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.551);
+    color: white;
+}
+
+.btn{
+    background: var(--maiin-color);
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem; /*Espaçamento acima do botão */
+    font-weight: arial;
+    text-decoration: none;
+    border-color: transparent;
+    
+
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid var(--maiin-color);
+    box-shadow: 0 0 1rem var(--maiin-color);
+}
+
+.btn:hover{
+    background: white;
+    color: var(--maiin-color);
+    box-shadow: 0 0 1rem var(--maiin-color);
+}
+
+::placeholder{
+    color: white;   
+    height: 10vh;
+}
+
+.icons svg{
+   position: relative;
+    top: -35px;
+    left: 80%;
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+
+svg:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    color: var(--maiin-color);
+}
+
+.checkbox a{
+    margin-top: -20px;
+    text-decoration: none;
+    color: white;
+}
+
+  /* Overlay cobrindo a tela */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5); /* fundo transparente */
+            display: none; /* começa escondido */
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        /* Spinner */
+        .spinner {
+            width: 3rem;
+            height: 3rem;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--maiin-color);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(15deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+
+    /* Overlay do spinner */
+    #spinnerOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    /* Spinner */
+    .spinner-border {
+      width: 3rem;
+      height: 3rem;
+      border: .4em solid #f3f3f3;
+      border-top: .4em solid var(--maiin-color);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Overlay do modal */
+    #modalOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    }
+
+    /* Caixa do modal */
+    #modal {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      width: 80%;
+      max-width: 350px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    #modal h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 15px;
+      color: var(--bg);
+    }
+
+    #modal button {
+      background: var(--maiin-color);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #modal button:hover {
+      background: var(--bg);
+    }
