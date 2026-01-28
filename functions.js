@@ -19,3 +19,5 @@ const botao = document.getElementById("cadastrarBtn");
     fecharBtn.addEventListener("click", () => {
       modalOverlay.style.display = "none";
     });
+
+    console.log("teste");
